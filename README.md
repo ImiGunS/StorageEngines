@@ -81,6 +81,48 @@ Els arxius `MYI` contenen la informació de la indexació de les taules.
 
 ![image](https://user-images.githubusercontent.com/79653853/157521974-622f9323-b2ae-43c8-b045-a39c74ef11b9.png)
 
-- Busca informació dels schemas de metadata i l'objectiu de cadascun d'ells. Posa un exemple d'us.
+- Busca informació dels schemas de metadata i l'objectiu de cadascun d'ells. Posa un exemple d'ús.
 
+
+- Posa un exemple de com es produeix un Deadlock.
+
+Tindrem 2 clients, client A i client B. On client A començarà una transacció que farà un LOCK a nivell de registre, aleshores el client B començarà una transacció en la mateixa taula.
+
+CLIENT A
+
+![image](https://user-images.githubusercontent.com/79653853/158664500-63a57a72-5cd9-4a29-88c2-d54f18e79261.png)
+
+CLIENT B
+
+![image](https://user-images.githubusercontent.com/79653853/158664536-733e9152-e030-47cf-913b-839bcd691fda.png)
+
+Mentres CLIENT B executa la comanda, el servidor retorna el següent error
+
+![image](https://user-images.githubusercontent.com/79653853/158665358-29acbb72-fa5c-47f2-b7ad-bc9cd1d42034.png)
+
+
+## Activitat 2
+
+- Desactiva l’opció que ve per defecte de `innodb_file_per_table`
+
+Per fer això, anirem a l'arxiu de configuració `my.cnf` i afegirem la següent linea.
+
+![image](https://user-images.githubusercontent.com/79653853/158666155-c520d96d-a6d5-4672-ab0f-17f4cf7aa99e.png)
+
+Això ha creat dos fitxers
+
+![image](https://user-images.githubusercontent.com/79653853/158670028-073a8b06-f3f5-4997-b419-4d832afd8719.png)
+
+On a `mysql.ibd` guarda tota les dades de la creació de tota la estructura de taules. I a `ibdata1` guarda tot el contingut de totes les taules.
+
+MYSQL.IDB
+
+![image](https://user-images.githubusercontent.com/79653853/158671465-817c9cce-0982-408f-95de-d0148b314993.png)
+
+![image](https://user-images.githubusercontent.com/79653853/158671622-624e8d18-e5f8-4971-b769-10127804235e.png)
+
+
+IBDATA1
+
+![image](https://user-images.githubusercontent.com/79653853/158672732-3b2f02b6-f674-4c10-a71a-afb35aeebe54.png)
 
