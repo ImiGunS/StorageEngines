@@ -148,3 +148,32 @@ Ara, reiniciem el servei.
 
 ![image](https://user-images.githubusercontent.com/79653853/159724156-21e090c8-77b5-4744-8ba4-95d319889ea8.png)
 
+## ACTIVITAT 7
+
+- Util·lització de `CSV ENGINE`.
+
+Abans de començar, crearem una base de dades i taules amb aquest engine.
+
+![image](https://user-images.githubusercontent.com/79653853/159772514-cd8539f8-3407-4572-8090-7fcf85082ad9.png)
+
+Com podem veure, ens ha generat uns arxius del tipus `.sdi`, `.csm`, `.csv`. On dins de l'arxiu CSV trobem el següent.
+
+![image](https://user-images.githubusercontent.com/79653853/159772892-8d2ec566-c41e-4821-a9f7-c7e2d0990d0a.png)
+
+
+## ACTIVITAT 8
+
+- Ara documenta i poso un exemple de com utilitzar `MyRocks` com a engine.
+
+Crearem la nostre Base de Dades
+
+![image](https://user-images.githubusercontent.com/79653853/159775582-a847f6ab-14fb-41f6-811e-c1a257209ae7.png)
+
+Ara tenim els següents fitxers al nostre servidor.
+
+![image](https://user-images.githubusercontent.com/79653853/159775979-36eeaccc-fdcc-4746-9317-16c70fa9c488.png)
+
+I comprovem que les noves taules estan utilitzan el MyRocks com a storage engine.
+
+![image](https://user-images.githubusercontent.com/79653853/159776083-a12691bc-e121-401e-9190-c60635ae01ba.png)
+
