@@ -36,7 +36,11 @@ Ara fem Run al següent script per activar el MyRocks Engine.
 
 ![image](https://user-images.githubusercontent.com/79653853/157507465-9c38c8c8-a833-4795-b2bf-b5b82925f5cd.png)
 
-Surt un error, però igualment activa l'storage engine que volem.
+Surt un error en la instal·lació
+
+![image](https://user-images.githubusercontent.com/79653853/159785859-4454547a-3705-4f52-9aaa-e8fca94ecd45.png)
+
+Reproduim la comanda de nou i surt això. Sembla que activa l'storage engina igualment.
 
 ![image](https://user-images.githubusercontent.com/79653853/157510547-b32731d6-1e16-45ce-9815-8816d03e092d.png)
 
