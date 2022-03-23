@@ -169,11 +169,27 @@ Crearem la nostre Base de Dades
 
 ![image](https://user-images.githubusercontent.com/79653853/159775582-a847f6ab-14fb-41f6-811e-c1a257209ae7.png)
 
-Ara tenim els següents fitxers al nostre servidor.
-
-![image](https://user-images.githubusercontent.com/79653853/159775979-36eeaccc-fdcc-4746-9317-16c70fa9c488.png)
-
 I comprovem que les noves taules estan utilitzan el MyRocks com a storage engine.
 
 ![image](https://user-images.githubusercontent.com/79653853/159776083-a12691bc-e121-401e-9190-c60635ae01ba.png)
+
+Ara tenim els següents fitxers al nostre servidor, `nomDataBase` i `.rocksdb`.
+
+Aquí tenim els arxius `.sdi` com els que ha hem vist anteriorment que contenen tota l'estructura de les taules.
+
+![image](https://user-images.githubusercontent.com/79653853/159775979-36eeaccc-fdcc-4746-9317-16c70fa9c488.png)
+
+En aquests arxius tenim la informació relacionada a les dades de les nostres taules, com les pròpies dades, indexs i altres.
+
+![image](https://user-images.githubusercontent.com/79653853/159778640-733d158d-5286-4df2-bba4-784a28449e04.png)
+
+![image](https://user-images.githubusercontent.com/79653853/159778713-bcf8ddd0-9d32-4c51-a979-e51cf512c91f.png)
+
+
+Com podem veure, dins d'aquest fitxer `.log`, tenim totes les dades de les nostres taules.
+
+![image](https://user-images.githubusercontent.com/79653853/159778300-e3f64a37-96cc-44c2-91e4-21df55ac6f78.png)
+
+- Quina és la compressió per defecte?
+
 
