@@ -126,3 +126,25 @@ IBDATA1
 
 ![image](https://user-images.githubusercontent.com/79653853/158672732-3b2f02b6-f674-4c10-a71a-afb35aeebe54.png)
 
+
+- Canvia la localització del tablespace per defecte a `/discs-mysql`
+
+Creació directoris.
+
+![image](https://user-images.githubusercontent.com/79653853/159730036-d0f362e3-bd0f-40f6-ad22-7ca44f2c38b1.png)
+
+Primerament, apaguem el servei de `mysqld`.
+
+![image](https://user-images.githubusercontent.com/79653853/159722983-2b04da66-dcfb-4289-9177-3a7752b8fa45.png)
+
+Aleshores mentres el servei està apagat, canviarem la localització de la següent manera.
+
+![image](https://user-images.githubusercontent.com/79653853/159735498-118ec5d2-d554-43a8-a8a2-79d306f30558.png)
+
+
+![image](https://user-images.githubusercontent.com/79653853/159733478-809b92a2-718b-4f49-aafb-751245e2bc9c.png)
+
+Ara, reiniciem el servei.
+
+![image](https://user-images.githubusercontent.com/79653853/159724156-21e090c8-77b5-4744-8ba4-95d319889ea8.png)
+
