@@ -40,7 +40,7 @@ Surt un error en la instal·lació
 
 ![image](https://user-images.githubusercontent.com/79653853/159785859-4454547a-3705-4f52-9aaa-e8fca94ecd45.png)
 
-Reproduim la comanda de nou i surt això. Sembla que activa l'storage engina igualment.
+Reproduim la comanda de nou i surt això. Sembla que activa l'storage engine igualment.
 
 ![image](https://user-images.githubusercontent.com/79653853/157510547-b32731d6-1e16-45ce-9815-8816d03e092d.png)
 
