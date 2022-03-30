@@ -196,4 +196,9 @@ Com podem veure, dins d'aquest fitxer `.log`, tenim totes les dades de les nostr
 
 - Quina és la compressió per defecte?
 
+Com podem veure amb el següent `SELECT`, la compressió per defecte és `kLZ4`
+
+![image](https://user-images.githubusercontent.com/79653853/160897642-f37fd088-ca19-43f9-a3a6-92c87943a52f.png)
+
+- Com ho faries per canviar-lo?
 
