@@ -143,7 +143,7 @@ Primerament, apaguem el servei de `mysqld`.
 
 Aleshores mentres el servei està apagat, canviarem la localització de la següent manera.
 
-![image](https://user-images.githubusercontent.com/79653853/159735498-118ec5d2-d554-43a8-a8a2-79d306f30558.png)
+![image](https://user-images.githubusercontent.com/79653853/161097293-8f981910-aaf4-40a0-a33f-319245b6543e.png)
 
 
 ![image](https://user-images.githubusercontent.com/79653853/159733478-809b92a2-718b-4f49-aafb-751245e2bc9c.png)
