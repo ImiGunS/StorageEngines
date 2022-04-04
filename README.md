@@ -135,7 +135,7 @@ IBDATA1
 
 Creació directoris.
 
-![image](https://user-images.githubusercontent.com/79653853/161098378-830b14bc-8059-4397-aa40-730ebb93e15f.png)
+![image](https://user-images.githubusercontent.com/79653853/161594590-5c9d1ef6-5963-4142-b627-7d6f8ad1217f.png)
 
 Primerament, apaguem el servei de `mysqld`.
 
@@ -145,7 +145,21 @@ Aleshores mentres el servei està apagat, canviarem la localització de la segü
 
 ![image](https://user-images.githubusercontent.com/79653853/161097293-8f981910-aaf4-40a0-a33f-319245b6543e.png)
 
+Ara, copiarem tot el contingut de `/var/lib/mysql/*` al nostre nou directori.
 
+![image](https://user-images.githubusercontent.com/79653853/161595104-c50762c4-286a-40a5-b764-6d0191150668.png)
+
+Abans de continuar, instal·larem la següent llibreria de manera que poguem continuar els següents passos de manera exitosa.
+
+![image](https://user-images.githubusercontent.com/79653853/161595695-b8d2b380-6d4d-49f5-9db2-bd656c851c32.png)
+
+Una vegada hem instal·lat això, procedirem mitjançant el semanage.
+
+![image](https://user-images.githubusercontent.com/79653853/161595911-d03ea618-7f3b-455c-a5e8-2859a6cebacc.png)
+
+Ara, restablirem la connexió amb mysql.
+
+![image](https://user-images.githubusercontent.com/79653853/161596003-d0e22d4c-7b12-4369-bad3-b794c4b7f9d8.png)
 
 Ara, reiniciem el servei.
 
