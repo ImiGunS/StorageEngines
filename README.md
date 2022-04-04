@@ -165,6 +165,12 @@ Ara, reiniciem el servei.
 
 ![image](https://user-images.githubusercontent.com/79653853/159724156-21e090c8-77b5-4744-8ba4-95d319889ea8.png)
 
+Una vegada restablert el servei, entrarem al mysql i comprovarem ls canvis realitzats, en aquest cas, el `DATADIR` i el `innodb_data_file_path`.
+
+![image](https://user-images.githubusercontent.com/79653853/161606671-9aa16888-55f9-4dab-82b9-2e18610ffe90.png)
+
+
+
 ## ACTIVITAT 7
 
 - Util·lització de `CSV ENGINE`.
