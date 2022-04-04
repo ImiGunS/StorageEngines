@@ -169,6 +169,17 @@ Una vegada restablert el servei, entrarem al mysql i comprovarem ls canvis reali
 
 ![image](https://user-images.githubusercontent.com/79653853/161606671-9aa16888-55f9-4dab-82b9-2e18610ffe90.png)
 
+![image](https://user-images.githubusercontent.com/79653853/161607970-69b71852-c1b2-439a-8fb5-b26d04375f1b.png)
+
+
+Comprovarem l'espai dins dels disks mitjançant la comanda `du`. Veiem que de forma default tenen 10M com a mida inicial.
+
+![image](https://user-images.githubusercontent.com/79653853/161607797-8c15dff6-7583-44a5-873b-686216d06b33.png)
+
+Finalment hem aconseguit el que estàvem buscant.
+
+## ACTIVITAT 3
+
 
 
 ## ACTIVITAT 7
