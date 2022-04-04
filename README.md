@@ -157,8 +157,6 @@ Una vegada hem instal·lat això, procedirem mitjançant el semanage.
 
 ![image](https://user-images.githubusercontent.com/79653853/161595911-d03ea618-7f3b-455c-a5e8-2859a6cebacc.png)
 
-Ara, restablirem la connexió amb mysql.
-
 ![image](https://user-images.githubusercontent.com/79653853/161596003-d0e22d4c-7b12-4369-bad3-b794c4b7f9d8.png)
 
 Ara, reiniciem el servei.
@@ -179,6 +177,42 @@ Comprovarem l'espai dins dels disks mitjançant la comanda `du`. Veiem que de fo
 Finalment hem aconseguit el que estàvem buscant.
 
 ## ACTIVITAT 3
+
+- Configura el Percona Server de forma que cada taula generi el seu propi tablespace en una carpeta anomenada `tspaces`.
+
+Abans de començar, habilitarem un altre cop el `innodb_file_per_table` que abans hem deshabilitat.
+
+![image](https://user-images.githubusercontent.com/79653853/161612693-a7938388-8aea-493a-b318-ad48729eb4aa.png)
+
+Ara, crearem la carpeta `tspaces` amb els permisos corresponents.
+
+![image](https://user-images.githubusercontent.com/79653853/161612980-106a57bf-fdba-4643-b8ad-94064b800b2b.png)
+
+Ara pararem el servei `mysqld` per continuar de forma segura.
+
+![image](https://user-images.githubusercontent.com/79653853/161613839-82fec957-e5fd-4e13-873f-229c340c7f29.png)
+
+Ara copiarem tots els fitxers dins de `/var/lib/mysql` a `/tspaces`.
+
+![image](https://user-images.githubusercontent.com/79653853/161614066-979840e0-bec4-4900-b65d-78189b595f04.png)
+
+Després de copiar tots els arxius, aplicarem el semanage en la nostre carpeta `tspaces` d'igual manera que hem fet abans.
+
+![image](https://user-images.githubusercontent.com/79653853/161614475-14bb3d53-6ea7-41bd-b6fa-554dd8856055.png)
+
+Seguidament, canviarem el `my.cnf` de la següent manera.
+
+![image](https://user-images.githubusercontent.com/79653853/161615382-1916f3cd-cbe6-46cd-9900-1df1d78d9336.png)
+
+Un cop feta la modificació, reiniciarem el servei mysqld.
+
+![image](https://user-images.githubusercontent.com/79653853/161615428-6473080e-f86e-4528-9b38-605822293c79.png)
+
+Finalment, comprovarem el datadir mitjançant una consulta mysql.
+
+![image](https://user-images.githubusercontent.com/79653853/161615605-342be837-98aa-49ca-a07d-6258b6f2237a.png)
+
+## ACTIVITAT 4
 
 
 
