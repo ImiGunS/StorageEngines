@@ -244,6 +244,15 @@ Finalment comprovarem el contingut del ts2 mitjançant la comanda strings.
 
 ## ACTIVITAT 5
 
+- Comprova InnoDB Log Checkpointing (LSN Number, últim LSN actualitzat a disc, últim LSN amb checkpoint).
+
+Per comprovar InnoDB Log Checkpointing farem una consulta MySQL mitjançant la comanda `SHOW`
+
+![image](https://user-images.githubusercontent.com/79653853/161813610-76440308-bb91-445c-ba75-a571dfde557f.png)
+
+![image](https://user-images.githubusercontent.com/79653853/161813567-f5c65004-acec-47a8-b99b-48e2f8181852.png)
+
+- Proposa un exemple on es vegi lús de `Redolog`
 
 ## ACTIVITAT 7
 
