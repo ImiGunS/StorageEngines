@@ -214,6 +214,16 @@ Finalment, comprovarem el datadir mitjançant una consulta mysql.
 
 ## ACTIVITAT 4
 
+Crea un tablespace `ts1` situat en `/discs-mysql/disk1` i col·loca les taules actor, address i category de Sakila DB.
+
+Abans de fer res, ens assegurem que tenim el `innodb_file_per_table=ON`.
+
+![image](https://user-images.githubusercontent.com/79653853/161794244-7155a426-64b0-4ba8-bc85-c59eb4ddc594.png)
+
+Ara mitjançant comandes MySQL crearem un nou tablespace i canviarem el tablespace de les taules abans anomenades.
+
+![image](https://user-images.githubusercontent.com/79653853/161796340-b7e142cf-f6fb-44c4-a932-6e1938f55951.png)
+
 
 
 ## ACTIVITAT 7
