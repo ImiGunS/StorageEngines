@@ -214,7 +214,7 @@ Finalment, comprovarem el datadir mitjançant una consulta mysql.
 
 ## ACTIVITAT 4
 
-Crea un tablespace `ts1` situat en `/discs-mysql/disk1` i col·loca les taules actor, address i category de Sakila DB.
+- Crea un tablespace `ts1` situat en `/discs-mysql/disk1` i col·loca les taules actor, address i category de Sakila DB.
 
 Abans de fer res, ens assegurem que tenim el `innodb_file_per_table=ON`.
 
@@ -224,6 +224,25 @@ Ara mitjançant comandes MySQL crearem un nou tablespace i canviarem el tablespa
 
 ![image](https://user-images.githubusercontent.com/79653853/161796340-b7e142cf-f6fb-44c4-a932-6e1938f55951.png)
 
+Comprovarem el contingut del nostre ts1 mitjançant la comanda strings.
+
+![image](https://user-images.githubusercontent.com/79653853/161805295-fc4706b0-b045-48dd-9e6c-af3c382ab1ae.png)
+
+![image](https://user-images.githubusercontent.com/79653853/161805426-09844a7c-559b-44eb-9b20-bdb9013ccbbf.png)
+
+- Ara crea un tablespace `ts2` situat en `/discs-mysql/disk2` i col·loca-hi la resta de taules.
+
+Farem el mateix que abans, primerament crearem el tablespace i seguidament possarem les taules que ens interessa.
+
+![image](https://user-images.githubusercontent.com/79653853/161809229-2eaba7fa-a46e-473b-8549-9311eff6c1fa.png)
+
+Finalment comprovarem el contingut del ts2 mitjançant la comanda strings.
+
+![image](https://user-images.githubusercontent.com/79653853/161809538-62a13f7f-bee4-4b08-b4ff-e031acf85842.png)
+
+![image](https://user-images.githubusercontent.com/79653853/161809724-ecb9ab0c-4deb-4227-8400-11e4318f4606.png)
+
+## ACTIVITAT 5
 
 
 ## ACTIVITAT 7
