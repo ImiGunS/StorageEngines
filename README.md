@@ -328,3 +328,10 @@ Altrament, podem utilitzar el següent `SELECT` per veure-ho de manera més maca
 
 - Com ho faries per canviar-lo?
 
+Com la variable global `rocksdb_default_cf_options` no és dinàmica, canviarem aquesta variable des de l'arxiu `my.cnf`
+
+![image](https://user-images.githubusercontent.com/79653853/162047825-eccffdc0-66aa-4d4e-92de-cf97bb4ff1fe.png)
+
+Una vegada fet anem a comprovar els canvis.
+
+![image](https://user-images.githubusercontent.com/79653853/162048468-9152d88e-c5fa-4d9f-8fb2-ee6106f471e6.png)
