@@ -87,6 +87,17 @@ Els arxius `MYI` contenen la informació de la indexació de les taules.
 
 - Busca informació dels schemas de metadata i l'objectiu de cadascun d'ells. Posa un exemple d'ús.
 
+Podem obtenir totes les metadades mitjançant la comanda `SHOW TABLES FROM INFORMATION SCHEMA`, però com aquesta comanda és antiga (utilitzada comunment en versions anteriors a MySQL 5.0), utilitzarem `SELECT * FROM information_schema.tables` donat que mostra més dades.
+
+![image](https://user-images.githubusercontent.com/79653853/162052249-7cbad0e1-f2a6-4501-afdf-0b461c6a080c.png)
+
+![image](https://user-images.githubusercontent.com/79653853/162052311-06d3988b-6fb7-4516-a8ec-b810a0f856b9.png)
+
+![image](https://user-images.githubusercontent.com/79653853/162052361-78c7915f-6683-46fb-bf03-6c88d09483b0.png)
+
+No es poden explicar tantes metadades ja que a més de tenir l'information_schema, també es generen metadades de totes les base de dades creades al servidor, en aquest cas tenim un total de 338 metadades possibles a consultar.
+
+![image](https://user-images.githubusercontent.com/79653853/162052726-a63d4345-324a-485c-8c26-3d23431625b3.png)
 
 - Posa un exemple de com es produeix un Deadlock.
 
