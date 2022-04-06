@@ -302,5 +302,9 @@ Com podem veure amb el següent `SELECT`, la compressió per defecte és `kLZ4`
 
 ![image](https://user-images.githubusercontent.com/79653853/160897642-f37fd088-ca19-43f9-a3a6-92c87943a52f.png)
 
+Altrament, podem utilitzar el següent `SELECT` per veure-ho de manera més maca.
+
+![image](https://user-images.githubusercontent.com/79653853/162036024-7e3e81a1-da68-469a-8a97-f386f9eb2cf0.png)
+
 - Com ho faries per canviar-lo?
 
