@@ -254,6 +254,27 @@ Per comprovar InnoDB Log Checkpointing farem una consulta MySQL mitjançant la c
 
 - Proposa un exemple on es vegi lús de `Redolog`
 
+El `Redolog` és basat en desar dades en disc i aquest és utilitzat durant un crash recovery per tal de corregir la incosistencia de dades en transaccions incompletes.
+Durant operacions normals, el redolog codifica les queries de canviar les dades de les taules mitjançant SQL statements o trucades d'APIs de baix nivell.
+Les modificacions dels arxius de dades que no s'han acabat de realitzar abans d'una pèrdua d'alimentació són repetides durant l'inicialització.
+
+En les actuals base de dades que nosaltres utilitzem ara mateix, no podem replicar un exemple d'ús ja que tractem amb base de dades relativament petites i no hi hauria cap resultat clar. De qualsevol manera, prefereixo explicar el funcionament del `Redolog` abans que fer un exemple absurd com altres companys han fet, perquè canviar la mida dels fitxers i afegir més fitxers de logs no és `CAP EXEMPLE D'ÚS`.
+
+
+webgrafia d'aquest apartat és la següent:
+https://dev.mysql.com/doc/refman/5.7/en/innodb-redo-log.html
+https://docs.oracle.com/cd/B19306_01/server.102/b14231/onlineredo.htm
+https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/recoscen008.htm
+https://www.percona.com/blog/2014/03/28/innodb-redo-log-archiving/
+https://www.percona.com/blog/2011/02/03/how-innodb-handles-redo-logging/
+https://dev.mysql.com/doc/refman/8.0/en/innodb-redo-log.html
+
+- Com podem saber el número de pàgines modificades (dirty pages) i el número total de pàgines?
+
+Per veure el numero de dirty pages farem l'anterior comanda `SHOW` però ara anirem a l'apartat `BUFFER POOL AND MEMORY`.
+
+![image](https://user-images.githubusercontent.com/79653853/162045241-7f505594-ce26-4783-8536-c5b22011f80a.png)
+
 ## ACTIVITAT 7
 
 - Util·lització de `CSV ENGINE`.
@@ -265,7 +286,6 @@ Abans de començar, crearem una base de dades i taules amb aquest engine.
 Com podem veure, ens ha generat uns arxius del tipus `.sdi`, `.csm`, `.csv`. On dins de l'arxiu CSV trobem el següent.
 
 ![image](https://user-images.githubusercontent.com/79653853/159772892-8d2ec566-c41e-4821-a9f7-c7e2d0990d0a.png)
-
 
 ## ACTIVITAT 8
 
