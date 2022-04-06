@@ -261,7 +261,7 @@ Les modificacions dels arxius de dades que no s'han acabat de realitzar abans d'
 En les actuals base de dades que nosaltres utilitzem ara mateix, no podem replicar un exemple d'ús ja que tractem amb base de dades relativament petites i no hi hauria cap resultat clar. De qualsevol manera, prefereixo explicar el funcionament del `Redolog` abans que fer un exemple absurd com altres companys han fet, perquè canviar la mida dels fitxers i afegir més fitxers de logs no és `CAP EXEMPLE D'ÚS`.
 
 
-webgrafia d'aquest apartat és la següent:
+webgrafia d'aquest apartat és la següent: <br>
 https://dev.mysql.com/doc/refman/5.7/en/innodb-redo-log.html
 https://docs.oracle.com/cd/B19306_01/server.102/b14231/onlineredo.htm
 https://web.stanford.edu/dept/itss/docs/oracle/10gR2/backup.102/b14191/recoscen008.htm
